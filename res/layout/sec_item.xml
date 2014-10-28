@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sec_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#d828ff"
+    android:padding="0dp" >
+
+    <ImageButton
+        android:id="@+id/secParentButton"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="#00ff00"
+        android:contentDescription="priColor" >
+    </ImageButton>
+    
+    <Button
+        android:id="@+id/secChildButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="GO" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/secParentButton"
+        android:layout_toLeftOf="@+id/secChildButton"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/secLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DEFAULT_FLAVOR"
+            android:textColor="#ffffff" />
+
+        <SeekBar
+            android:id="@+id/secBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/secLabel"
+            android:layout_alignParentLeft="true" />
+    </LinearLayout>
+
+</RelativeLayout>

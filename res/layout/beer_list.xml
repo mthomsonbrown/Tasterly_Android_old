@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:stretchColumns="*" >
+
+    <ListView
+        android:id="@+id/addBeer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="true" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/beerList"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>
